@@ -43,7 +43,10 @@
 <body text="blue">
     <div>
         <h1>Test Domain</h1>
-        <p>I use this domain to test how web.archive.org behaves. You can lookup at the results <a href="https://web.archive.org/web/*/https://Starmania.github.io/">here</a></p>
+        <p>I use this domain to test how web.archive.org behaves. You can lookup at the results <a href="https://web.archive.org/web/*/https://Starmania.github.io/">here</a></p><noscript>
+            <p>Status: JavaScript is disabled. Please enable it to see the dynamic status.</p>
+            <p>If JavaScript were enabled, the text color would be set based on the presence of "archive.org".</p>
+        </noscript>
     </div>
     <script>
         var scriptElement = document.evaluate("/html/head/script[1]", document).iterateNext();
