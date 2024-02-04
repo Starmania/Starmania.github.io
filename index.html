@@ -41,7 +41,7 @@
 </head>
 
 <body text="blue">
-    <div>
+    <div id="content">
         <h1>Test Domain</h1>
         <p>I use this domain to test how web.archive.org behaves. You can lookup at the results <a href="https://web.archive.org/web/*/https://Starmania.github.io/">here</a></p><noscript>
             <p>Status: JavaScript is disabled. Please enable it to see the dynamic status.</p>
@@ -59,7 +59,7 @@
             document.fgColor = "green";
             statusMessage.textContent = "Status: Archive.org not found"
         }
-        var div = document.body.children[0]
+        let div = document.getElementById("content")
 
         div.appendChild(statusMessage);
     </script>
